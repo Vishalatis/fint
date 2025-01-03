@@ -1,0 +1,208 @@
+/*---------------------------------
+    Footer CSS 
+-----------------------------------*/
+.footer-wrap{
+    &:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: calc(100% - 100px);
+        background-color: #E7F1F1;
+    }
+    .footer-shape-two{
+        right: 27.5%;
+        top: 0;
+    }
+    .footer-top{
+        .footer-shape{
+            top: 30%;
+            z-index: -1;
+        }
+    }
+    .fint-footer-widget{
+        .fint-footer-widget-title{
+            margin-bottom: 18px;
+        }
+        .footer-contact{
+            padding: 50px 50px 90px;
+            background-color: var(--secondaryColor);
+            margin-top: -100px;
+            .comp-address{
+                margin: 37px 0 27px;
+            }
+            .comp-address,
+            a{
+                color: #CDD4CD;
+            }
+            .social-profile{
+                margin-top: 32px;
+                margin-left: -4px;
+                li{
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        display: inline-block;
+                        i{
+                            color: var(--lemonColor);
+                            font-weight: 300;
+                            transition: var(--transition);
+                        }
+                        &:hover{
+                            transform: translateY(-3px);
+                            i{
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe-form{
+            input{
+                height:46px;
+                color: #7C8D7D;
+                padding: {
+                    left: 25px;
+                    right: 15px;
+                };
+                &::placeholder{
+                    opacity: 1;
+                    color: #7C8D7D;
+                }
+            }
+            button{
+                padding: 11px 15px;
+            }
+        }
+        .footer-menu{
+            li{
+                margin-bottom: 6.5px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    color: #3C4B3D;
+                    font-weight: 600;
+                    &:hover{
+                        color: var(--primaryColor);
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+        .checklist-widget{
+            li{
+                margin-bottom: 7px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .copyright-text{
+        background-color: var(--primaryColor);
+        padding: 26px 0;
+        color: var(--orangeBlackColor);
+        letter-spacing: -0.48px;
+        a{
+            color: var(--orangeBlackColor);
+            &:hover{
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+/*---------------------------------
+    Responsive CSS 
+-----------------------------------*/
+@media only screen and (max-width: 767px) {
+    .footer-wrap{
+        &:after{
+            height: calc(100% - 50px);
+        }
+        .fint-footer-widget{
+            .footer-contact{
+                padding: 30px 25px 30px;
+                margin-top: -50px;
+                .comp-address{
+                    margin: 30px 0 27px;
+                }
+                .social-profile{
+                    margin-top: 22px;
+                }
+            }
+            .checklist-widget{
+                margin-bottom: 11px;
+            }
+            .fint-footer-widget-title{
+                margin-bottom: 11px;
+            }
+            .footer-menu li a,
+            .contact-info li,
+            .comp-desc{
+                font-size: 14px;
+            }
+            .footer-menu{
+                li{
+                    margin-bottom: 3px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-wrap {
+        &:after{
+            height: calc(100% - 70px);
+        }
+        .fint-footer-widget {
+            .footer-contact {
+                padding: 65px 35px 80px;
+                margin-top: -70px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer-wrap {
+        .fint-footer-widget {
+            .footer-contact {
+                padding: 65px 35px 107px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .fint-footer-widget{
+        .comp-desc{
+            letter-spacing: 0.04px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .footer-wrap{
+        .fint-footer-widget{
+            .fs-24{
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .footer-wrap{
+        .fint-footer-widget{
+            .footer-contact{
+                width: calc(100% - 43px);
+                margin-top: -97px;
+            }
+        }
+    }
+}
